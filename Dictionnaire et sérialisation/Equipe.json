@@ -1,0 +1,23 @@
+{
+    "Members" : 
+    [
+        {
+            "Name" : "Alex",
+            "Age" : 27,
+            "BirthYear" : 1992,
+            "ZodiacalSign" : "Balance/Scorpion"
+        },
+        {
+            "Name" : "Guillaume",
+            "Age" : 32,
+            "BirthYear" : 1988,
+            "ZodiacalSign" : "Vierge"
+        },
+        {
+            "Name" : "Javier",
+            "Age" : 45,
+            "BirthYear" : 1974,
+            "ZodiacalSign" : "Cancer"
+        }
+    ]
+}

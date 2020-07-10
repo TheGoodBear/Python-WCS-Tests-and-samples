@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+   <Members>
+      <element>
+         <Age>27</Age>
+         <BirthYear>1992</BirthYear>
+         <Name>Alex</Name>
+         <ZodiacalSign>Balance/Scorpion</ZodiacalSign>
+      </element>
+      <element>
+         <Age>32</Age>
+         <BirthYear>1988</BirthYear>
+         <Name>Guillaume</Name>
+         <ZodiacalSign>Vierge</ZodiacalSign>
+      </element>
+      <element>
+         <Age>45</Age>
+         <BirthYear>1974</BirthYear>
+         <Name>Javier</Name>
+         <ZodiacalSign>Cancer</ZodiacalSign>
+      </element>
+   </Members>
+</root>
