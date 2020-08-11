@@ -5,15 +5,8 @@ class Vehicle():
         Generic class to manage vehicles
     """
     
-    # Properties
-    Name = ""
-    Color = ""
-    MaxSpeed = 0
-    Position = 0        # in meters
-    TimeToStart = 0     # in min
-    TimeBeforeMoving = 0
-    HasStarted = False
-
+    # Global (static) properties
+    Category = "Véhicule"
 
     # Methods
     def __init__(self, 
@@ -24,10 +17,14 @@ class Vehicle():
         """
             Vehicle constructor
         """
+        # Instance properties
         self.Name = Name
         self.Color = Color
         self.MaxSpeed = MaxSpeed
-        self.TimeToStart = TimeToStart  
+        self.Position = 0
+        self.TimeToStart = TimeToStart
+        self.TimeBeforeMoving = 0
+        self.HasStarted = False  
 
 
     def GetPosition(self):

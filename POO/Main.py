@@ -64,6 +64,33 @@ def Main():
     Vehicles.append(Vehicle2)
     print(f"Mon véhicule numéro 2 ({Vehicle2.Name}) est de couleur {Vehicle2.Color} et peux se déplacer à {Vehicle2.MaxSpeed}km/h")
 
+    # check global property
+    print(f"Catégorie générique de véhicule : {Vehicle.Category}")
+    # print(f"ID de véhicule : {Vehicle.ID}")
+    print(f"Catégory véhicule 1 : {Vehicle1.Category}")
+    Vehicle.Category = "Machin qui roule"
+
+    ##### *** NE PAS FAIRE ***
+    # Propriétés créées à la volée
+    Vehicle.ID = 1          
+    print(f"ID générique de véhicule : {Vehicle.ID}")
+    print(f"Catégory véhicule 1 : {Vehicle1.Category}")
+    print(f"Catégory véhicule 2 : {Vehicle2.Category}")
+    # print(f"Nombre véhicule 1 : {Vehicle1.Number}")
+    Vehicle1.Number = 1          
+    print(f"Nombre véhicule 1 : {Vehicle1.Number}")
+    # print(f"Nombre véhicule 2 : {Vehicle2.Number}")
+    #####
+
+    Vehicle3 = Vehicle()
+    Vehicle3.Name = "Vélo de Javier"
+    Vehicle3.Color = "Vert"
+    Vehicle3.MaxSpeed = 30
+    Vehicle3.TimeToStart = 0
+    Vehicles.append(Vehicle3)
+    print(f"Mon véhicule numéro 3 ({Vehicle3.Name}) est de couleur {Vehicle3.Color} et peux se déplacer à {Vehicle3.MaxSpeed}km/h")
+    print(f"Catégory véhicule 3 : {Vehicle3.Category}")
+
     # create vehicles from list
     NewVehicles = [
         ("Voiture d'Hadrien", "Vert", 42, 10),
@@ -97,6 +124,7 @@ def Main():
     else:
         print(f"{Vehicle1.Name} ne s'est pas déplacé.")
     Vehicle1.Start()
+    
     TravelTime = 1
     V1Distance = Vehicle1.Move(TravelTime)
     if V1Distance != None:
