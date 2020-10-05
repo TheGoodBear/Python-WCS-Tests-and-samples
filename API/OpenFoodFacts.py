@@ -12,7 +12,7 @@ def Main():
     # variables
     MinProductsInCategory = 10  # to filter categories
     MaxProductsInCategory = 20  # to filter categories
-    MaxCategories = 20  # limitation for demo
+    MaxCategories = 200  # limitation for demo
     Categories = []
     Products = []
 
